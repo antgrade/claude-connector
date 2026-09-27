@@ -87,6 +87,6 @@ replace the local URL in shokunin's `.gitmodules`, and run `git submodule sync`.
 
 ## Publication status
 
-No repository, plugin, or directory listing has been published. No license has
-been selected. See [submission notes](docs/submission.md) for the remaining work;
+No repository, plugin, or directory listing has been published. The plugin
+manifest declares the MIT license. See [submission notes](docs/submission.md) for the remaining work;
 the scaffold does not establish Claude compatibility or directory acceptance.

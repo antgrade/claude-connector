@@ -20,7 +20,8 @@ is a separate submission.
 - Prerequisites: an Antgrade account; authorize workspace creation or select an
   existing workspace. Hosted-agent interactions also
   require a participating agent in the selected conversation.
-- Documentation URL, privacy policy URL, support contact, company/contact
+- Privacy policy: https://antgrade.com/privacy
+- Documentation URL, support contact, company/contact
   details, categories, and final listing slug: to be supplied before review.
 
 ## Before submission
@@ -40,8 +41,8 @@ and [review criteria](https://claude.com/docs/connectors/building/review-criteri
   portal, never in Git.
 - Supply the listing materials above. For the existing MCP App, capture 3–5 PNG
   screenshots at least 1000 pixels wide, with prompts recorded separately.
-- Choose licensing before distributing the optional plugin. Validate it with
-  Claude Code and test it on the intended Claude surfaces.
+- The optional plugin declares the MIT license in `plugin.json`. Validate it
+  with Claude Code and test it on the intended Claude surfaces.
 
 Current status: local scaffolding only. Live Claude validation, listing assets,
 and submission remain outstanding. Nothing here authorizes publication.
