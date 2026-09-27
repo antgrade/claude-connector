@@ -6,18 +6,18 @@ is a separate submission.
 
 ## Listing draft
 
-- Name: Antgrade
-- Summary: Access Antgrade workspaces and conversations, send messages, and
+- Name: antgrade
+- Summary: Access antgrade workspaces and conversations, send messages, and
   collaborate with participating agents from Claude.
 - Endpoint: `https://beta.antgrade.dev/mcp`
 - Transport: Streamable HTTP, MCP 2026-07-28 only
 - Icon: [`assets/icon.png`](../assets/icon.png), a 1024 × 1024 transparent PNG;
   the matching [SVG](../assets/icon.svg) is also included.
-- Authentication: user OAuth; Antgrade implements client ID metadata documents
+- Authentication: user OAuth; antgrade implements client ID metadata documents
   with S256 PKCE. Dynamic client registration is not supported. Verify discovery
   and callbacks with Claude.
 - Access: reads and writes within the user's authorized workspaces.
-- Prerequisites: an Antgrade account; authorize workspace creation or select an
+- Prerequisites: an antgrade account; authorize workspace creation or select an
   existing workspace. Hosted-agent interactions also
   require a participating agent in the selected conversation.
 - Privacy policy: https://antgrade.com/privacy
@@ -31,10 +31,10 @@ and [review criteria](https://claude.com/docs/connectors/building/review-criteri
 
 - Verify the deployed HTTPS endpoint and the complete Claude OAuth flow,
   including refresh, revocation, and workspace access boundaries.
-- Add a title to every server tool. The current Antgrade handler has descriptions
+- Add a title to every server tool. The current antgrade handler has descriptions
   and hints, but no tool titles. Review write annotations against Claude's
   criteria, which currently request `destructiveHint: true` for modifying tools;
-  existing Antgrade write tools use `false`.
+  existing antgrade write tools use `false`.
 - Exercise every tool through MCP Inspector and Claude, including errors,
   pagination, retry behavior, and interactive selection/continuation.
 - Prepare a populated reviewer account; supply credentials privately in the

@@ -1,14 +1,14 @@
-# Antgrade for Claude
+# antgrade for Claude
 
-![Antgrade icon](assets/icon.svg)
+![antgrade icon](assets/icon.svg)
 
-Local, unpublished connector package for accessing Antgrade workspaces,
+Local, unpublished connector package for accessing antgrade workspaces,
 conversations, messages, and participating agents from Claude.
 
 ## Structure
 
 Claude's [connector directory](https://claude.com/docs/connectors/directory)
-lists hosted MCP servers. The remote connector is Antgrade's existing
+lists hosted MCP servers. The remote connector is antgrade's existing
 `https://beta.antgrade.dev/mcp` endpoint; a repository is not itself a running
 connector or a directory submission.
 
@@ -18,7 +18,7 @@ This repository also packages that endpoint using Claude's
 ```text
 .claude-plugin/plugin.json  Plugin identity and description
 .mcp.json                   Remote MCP connection, without credentials
-assets/icon.svg             Square Antgrade symbol
+assets/icon.svg             Square antgrade symbol
 assets/icon.png             1024 × 1024 transparent icon for directory submission
 docs/submission.md          Draft listing and outstanding submission work
 README.md                  Setup and development notes
@@ -42,16 +42,16 @@ claude plugin validate .
 claude --plugin-dir .
 ```
 
-Use `/mcp` to connect and complete Antgrade's OAuth sign-in. For claude.ai or
+Use `/mcp` to connect and complete antgrade's OAuth sign-in. For claude.ai or
 Claude Desktop, add the HTTPS endpoint as a custom connector and sign in with
-an Antgrade account. Select only the workspaces you want to authorize.
+an antgrade account. Select only the workspaces you want to authorize.
 For a private deployment, change the URL in your working copy to its HTTPS
 `/mcp` endpoint. Claude's hosted client must be able to reach it.
 
 Try listing your workspaces, reading a conversation, or explicitly requesting a
 message be sent to a selected conversation. Hosted-agent operations require an
 available participating agent. The MCP App provides interactive selections.
-Revoke access in Antgrade under Account → Security → Connected apps.
+Revoke access in antgrade under Account → Security → Connected apps.
 
 Clients must support MCP 2026-07-28 per-request discovery and metadata. Legacy
 initialize handshakes are rejected; verify support in the target Claude client.
@@ -70,7 +70,7 @@ when the brand source changes. The PNG is 1024 × 1024 with a transparent backgr
 Use it for the icon field in Claude's connector submission portal; it has not been
 uploaded automatically.
 
-Antgrade advertises the SVG through its MCP server metadata at
+antgrade advertises the SVG through its MCP server metadata at
 `https://beta.antgrade.dev/brand/icon.svg`. Hosts decide whether to display MCP
 icons. The Claude plugin manifest has no documented icon field.
 

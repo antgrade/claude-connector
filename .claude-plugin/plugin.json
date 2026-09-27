@@ -1,8 +1,8 @@
 {
   "name": "antgrade",
-  "displayName": "Antgrade",
+  "displayName": "antgrade",
   "version": "0.1.0",
-  "description": "Access Antgrade workspaces and conversations, send messages, and collaborate with participating agents from Claude.",
+  "description": "Access antgrade workspaces and conversations, send messages, and collaborate with participating agents from Claude.",
   "license": "MIT",
   "author": {
     "name": "antgrade"
