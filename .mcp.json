@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "antgrade": {
+      "type": "http",
+      "url": "https://beta.antgrade.dev/mcp"
+    }
+  }
+}
